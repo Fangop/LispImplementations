@@ -30,8 +30,6 @@
     )
   )
   )
-   ;(print fin1)
-   ;(print (out "1" fin1))
    (do (
         (l1 fin1 (cdr l1))
         (r1 fin1)
