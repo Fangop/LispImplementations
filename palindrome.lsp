@@ -1,5 +1,13 @@
+(defun rev (l)
+  (cond
+    ((null l) '())
+    (T (append (rev (cdr l)) (list (car l)))
+    )
+  )
+) 
+
 (defun palindrome (s)
-           (equal s (reverse  s))
+           (equal s (rev  s))
 )
 
 (print (palindrome '(a b c ) ))

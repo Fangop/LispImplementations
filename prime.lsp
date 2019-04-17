@@ -1,6 +1,5 @@
 ;;; file: prime.lsp
 ( DEFUN IS-PRIME(n d)
- ;    (print "in")
      (IF (= d 1)
          t
          (IF (= (mod n d) 0)
@@ -14,6 +13,6 @@
     (IS-PRIME n (- n 1))
 )
 
-;;;(PRIME 2)
-;;;(PRIME 999)
-;;;(PRIME 17)
+(print(PRIME 2))
+(print(PRIME 999))
+(print(PRIME 17))
